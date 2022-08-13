@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="shruart.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="container">
           <h1 class="gap"></h1>
-          <a href="index.html"><img src="images/Logo.jpeg" alt="Shru_Art" width="100"></a>
+          <a href="index.html"><img src="images/Logo.jpeg" class="tablogo" alt="Shru_Art" width="100"></a>
             <nav>
             <ul>
                 <li><a href="something.html">Something</a></li>
@@ -21,5 +22,33 @@
         </div>
     </header>
     <p>Something</p>
+    <div class="word">
+        <span>S</span>
+        <span>H</span>
+        <span>R</span>
+        <span>U</span>
+        <span>_</span>
+        <span>A</span>
+        <span>R</span>
+        <span>T</span>
+      </div>
+      
 </body>
+<script>
+    const spans = document.querySelectorAll('.word span');
+
+spans.forEach((span, idx) => {
+  span.addEventListener('click', (e) => {
+    e.target.classList.add('active');
+  });
+  span.addEventListener('animationend', (e) => {
+    e.target.classList.remove('active');
+  });
+  
+  // Initial animation
+  setTimeout(() => {
+    span.classList.add('active');
+  }, 750 * (idx+1))
+});
+</script>
 </html>
