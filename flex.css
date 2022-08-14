@@ -1,0 +1,21 @@
+.flexbox{
+    display: flex;
+    border: 2px solid gray;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.flexitem{
+    background-color: rgba(127, 255, 212, 0);
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 10px;
+    margin: 10px;   
+    width: 122px;
+    height: 122px;
+    text-align: right;
+}
