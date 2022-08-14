@@ -7,6 +7,10 @@ body {
 	font-weight: 800;
 }
 
+div{
+  display: block;
+}
+
 .container {
 	width: 80%;
 	margin: 0 auto;
@@ -84,7 +88,7 @@ section{
   margin: auto;
   margin-bottom: 50px;
   clear: both;
-  max-width: 967px;
+  max-width: 977px;
   display: block;
 }
 
@@ -132,6 +136,72 @@ text-decoration: none;
   margin-left: 20px;
   border-radius: 50%;
   background-color: #2e2e2e;
+}
+
+.featured-video {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.featured-video .videoWrapper iframe {
+  float: right;
+  margin-left: 30px;
+  box-shadow: 2px 2px 20px #232323;
+}
+
+iframe {
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+}
+
+footer{ 
+    float: left;
+    width: 100%;
+    clear: both;
+    height: 250px;
+    background-color: #413f3f;
+    padding-bottom: 5px;
+    color: #c0c0c0;
+    display: block;
+}
+
+.wrapper {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  min-width: 820px;
+}
+
+footer .first, .second, .third {
+  width: 33.333%;
+  float: left;
+  padding: 30px 0px 0px 0px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+footer .first {
+  padding-left: 30px;
+}
+
+footer .third {
+  text-align: right;
+  text-transform: uppercase;
+  padding-right: 30px;
+}
+
+footer .third p {
+  font-weight: lighter;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin-top: 15px;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+}
+
+footer .third a {
+  font-size: 30px;
+  text-decoration: none;
 }
 
   /* .topnav {
