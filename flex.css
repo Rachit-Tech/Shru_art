@@ -1,6 +1,6 @@
 .flexbox{
     display: flex;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     flex-wrap: wrap;
     position: relative;
     align-content: center;
@@ -12,10 +12,10 @@
 .flexitem{
     background-color: rgba(127, 255, 212, 0);
     border: 0px solid rgba(0, 0, 0, 0);
+    /* position: absolute; */
     top: 0;
     max-width: 440;
     max-height: 225;
-    width: 33.3333%;
     height: 100%;
     justify-content: center;
     align-content: center;
@@ -23,13 +23,35 @@
     text-align: center;
 }
 
+iframe{
+    width: 99%;
+}
+
 a{
     text-decoration: none;
     color: blueviolet;
 }
 
-@media (max-width:800px){
+@media (min-width:0px){
  .flexitem{
     width: 100%;
+ }   
+}
+
+   @media (min-width:650px){
+ .flexitem{
+    width: 50%;
+ }   
+}
+
+@media (min-width:950px){
+ .flexitem{
+    width: 33.3333%;
+ }   
+}   
+
+@media (min-width:1500px){
+ .flexitem{
+    width: 25%;
  }   
 }
