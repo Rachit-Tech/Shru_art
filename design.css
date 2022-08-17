@@ -92,8 +92,13 @@ section{
   display: block;
 }
 
+.text{
+  padding-left: 25px;
+}
+
 .start .button{
- 
+
+  padding-left: 25px;
   margin-top: 20px;
   width: 300px;
   float: left;
@@ -126,11 +131,14 @@ text-decoration: none;
 }
 
 .start .left {
+  text-align: center;
   float: left;
   margin-right: 60px;
 }
 
 .start .circle-image {
+  text-align: center;
+  align-content: center;
   height: 330px;
   width: 330px;
   margin-left: 20px;
@@ -147,6 +155,7 @@ text-decoration: none;
   float: right;
   margin-left: 30px;
   box-shadow: 2px 2px 20px #232323;
+  width: 100%;
 }
 
 iframe {
@@ -163,35 +172,33 @@ footer{
     background-color: #413f3f;
     padding-bottom: 5px;
     color: #c0c0c0;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .wrapper {
   padding-left: 0;
   padding-right: 0;
-  max-width: none;
-  min-width: 820px;
+  width: 100%;
 }
 
-footer .first, .second, .third {
-  width: 33.333%;
-  float: left;
-  padding: 30px 0px 0px 0px;
+footer #first, #second, #third {
+  width: 100%;
   box-sizing: border-box;
   margin-top: 20px;
 }
 
-footer .first {
+footer #first {
   padding-left: 30px;
 }
 
-footer .third {
+footer #third {
   text-align: right;
   text-transform: uppercase;
   padding-right: 30px;
 }
 
-footer .third p {
+footer #third p {
   font-weight: lighter;
   font-size: 18px;
   line-height: 1.5em;
@@ -199,7 +206,7 @@ footer .third p {
   text-shadow: 0 1px 3px rgb(0 0 0 / 50%);
 }
 
-footer .third a {
+footer #third a {
   font-size: 30px;
   text-decoration: none;
   color: #b85cf1;
@@ -209,7 +216,7 @@ footer .third a {
 width: 1.4cm;
 }
 
-  /* .topnav {
+/* .topnav {
     overflow: hidden;
     background-color: #333;
   }
