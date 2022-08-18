@@ -2,13 +2,14 @@
     position: relative;
     padding-top: 56.25%; /* ratio of the video */
 }
-  
+
 .video-wrapper__iframe {
       position: absolute;
       top: 0;
       width: 100% !important;
       height: 100% !important;
 }
+
 /* iframe{
     max-width: 440;
     max-height: 225;
@@ -17,8 +18,8 @@
     height: 0;
     margin: 0 auto;
     overflow: hidden;
-} */
-/* .video-wrapper{
+}
+ .video-wrapper{
     max-width: 440;
     max-height: 225;
     width: 100%;
